@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fadillah Jagat Pramudita Kusumah - Anak 15 Tahun Yang Membanggakan</title>
+<meta name="description" content="Fadillah Jagat Pramudita Kusumah, umur 15 tahun sudah menjadi Web Developer terbaik.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+:root{--blue:#2563eb;--blue2:#60a5fa;--blue3:#93c5fd;--bg:#020617;--bg2:#050b1e;--card:#0f172a;--card2:#111c36;--line:rgba(255,255,255,.08);--text:#e2e8f0;--muted:#94a3b8;--ease:cubic-bezier(.22,1,.36,1);--ease-spring:cubic-bezier(.34,1.56,.64,1);--gold:#fbbf24}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;overflow-x:hidden;line-height:1.7}
+::selection{background:var(--blue);color:#fff}
+a{color:var(--blue2);text-decoration:none}
+img{max-width:100%}
+#loading{position:fixed;inset:0;background:radial-gradient(800px 400px at 50% 0%, #1e3a8a 0%, #020617 60%);z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;transition:opacity .7s var(--ease), visibility .7s}
+#loading.hide{opacity:0;visibility:hidden}
+.load-logo{width:72px;height:72px;border-radius:22px;background:linear-gradient(135deg,#2563eb,#60a5fa);display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:900;box-shadow:0 20px 40px rgba(37,99,235,.4);animation:floatY 2.5s ease-in-out infinite;overflow:hidden}
+.load-logo img{width:100%;height:100%;object-fit:cover}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+#loadNum{font-size:68px;font-weight:900;letter-spacing:-2px;line-height:1}
+.pct{color:var(--blue2);font-size:32px}
+#loadBar{width:240px;height:4px;background:#1e293b;border-radius:999px;overflow:hidden}
+#loadFill{height:100%;width:0%;background:linear-gradient(90deg,#2563eb,#60a5fa,#fbbf24);border-radius:999px;transition:width .25s var(--ease)}
+.load-text{color:var(--muted);font-size:12px;letter-spacing:1px;text-transform:uppercase}
+.load-skel{width:260px;display:flex;flex-direction:column;gap:10px}
+.skel{position:relative;overflow:hidden;background:#1e293b!important;border-radius:12px}
+.skel::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.28),transparent);animation:shimmer 1.15s infinite;transform:translateX(-100%)}
+@keyframes shimmer{to{transform:translateX(100%)}}
+.stars{position:fixed;inset:0;pointer-events:none;z-index:0}
+.stars i{position:absolute;background:#fff;border-radius:50%;opacity:.6;animation:twinkle 3s ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:.2;transform:scale(.8)}50%{opacity:.9;transform:scale(1.2)}}
+.glow{position:fixed;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(37,99,235,.25),transparent 70%);filter:blur(40px);pointer-events:none;z-index:0}
+nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);background:rgba(15,23,42,.85);backdrop-filter:blur(16px);border:1px solid var(--line);border-radius:999px;padding:6px;display:flex;gap:2px;z-index:100;box-shadow:0 10px 30px rgba(0,0,0,.4);max-width:95vw;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav button{border:none;background:transparent;color:#cbd5e1;padding:9px 16px;border-radius:999px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap;transition:all .35s var(--ease)}
+nav button:hover{background:#1e293b;color:#fff;transform:translateY(-1px)}
+nav button.active{background:var(--blue);color:#fff;box-shadow:0 8px 20px rgba(37,99,235,.4);animation:pop .4s var(--ease-spring)}
+@keyframes pop{50%{transform:scale(1.12)}}
+nav .fdelz{background:#22c55e;color:#fff;font-weight:800}
+.wrap{max-width:1020px;margin:auto;padding:100px 18px 20px;position:relative;z-index:2}
+.page{display:none}
+.page.show{display:block;animation:pageIn .6s var(--ease) both}
+@keyframes pageIn{from{opacity:0;transform:translateX(28px);filter:blur(8px)}to{opacity:1;transform:none;filter:blur(0)}}
+section{margin:64px 0}
+h2{font-size:clamp(26px,5vw,36px);line-height:1.2;letter-spacing:-.5px}
+h2 span{color:var(--blue2);font-style:italic}
+.sub{color:var(--muted);font-size:14px;line-height:1.8;margin-top:10px;max-width:680px}
+.badge{display:inline-flex;align-items:center;gap:6px;background:rgba(37,99,235,.18);border:1px solid rgba(37,99,235,.3);color:#bfdbfe;padding:7px 13px;border-radius:999px;font-size:12px;font-weight:700}
+.reveal{opacity:0;transform:translateY(28px);filter:blur(6px);transition:opacity .8s var(--ease),transform .8s var(--ease),filter .8s var(--ease)}
+.reveal.in{opacity:1;transform:none;filter:blur(0)}
+.reveal-d1{transition-delay:.08s}.reveal-d2{transition-delay:.16s}
+.btn{border:none;cursor:pointer;padding:14px 22px;border-radius:14px;font-weight:800;font-size:14px;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:transform .25s var(--ease-spring),filter .25s,box-shadow .25s;will-change:transform}
+.btn:hover{filter:brightness(1.12);transform:translateY(-2px)}
+.btn:active{transform:scale(.92) rotate(-1deg)}
+.btn.klik{animation:btnMental .45s var(--ease-spring)}
+@keyframes btnMental{40%{transform:scale(1.1) rotate(-2deg)}}
+.btn-blue{background:linear-gradient(135deg,#2563eb,#3b82f6);color:#fff;box-shadow:0 12px 26px rgba(37,99,235,.35)}
+.btn-ghost{background:#1e293b;color:#fff;border:1px solid var(--line)}
+.btn-green{background:linear-gradient(135deg,#16a34a,#22c55e);color:#fff;box-shadow:0 12px 26px rgba(34,197,94,.3)}
+.btn-gold{background:linear-gradient(135deg,#d97706,#fbbf24);color:#1a1000;box-shadow:0 12px 26px rgba(251,191,36,.3)}
+.btn-full{width:100%}
+.card{background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:20px;padding:22px;position:relative;overflow:hidden;transition:transform .45s var(--ease-spring),box-shadow .45s var(--ease),border-color .45s, height .45s}
+.card::before{content:'';position:absolute;inset:0;background:radial-gradient(300px 120px at 20% 0%,rgba(37,99,235,.18),transparent);opacity:0;transition:opacity .45s}
+.card:hover{transform:translateY(-7px) scale(1.02);border-color:rgba(37,99,235,.6);box-shadow:0 22px 44px rgba(37,99,235,.22)}
+.card:hover::before{opacity:1}
+.card:active{transform:scale(.96) rotate(-.6deg);transition-duration:.15s}
+.card h3{font-size:17px;margin-bottom:6px}
+.card p{font-size:13px;color:var(--muted);line-height:1.75}
+.card .icon{width:48px;height:48px;border-radius:14px;background:#1e293b;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:12px;transition:transform .45s var(--ease-spring)}
+.card:hover .icon{transform:rotate(-8deg) scale(1.1);background:#2563eb}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:760px){.grid,.grid2{grid-template-columns:1fr}.hero{flex-direction:column!important}.idcard{transform:rotate(0)!important}}
+.hero{display:flex;gap:28px;align-items:center}
+.hero-left{flex:1;min-width:280px}
+.hero h1{font-size:clamp(34px,6.5vw,54px);line-height:1.05;letter-spacing:-1px;margin:14px 0 12px}
+.hero h1 .biru{background:linear-gradient(90deg,#60a5fa,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{color:var(--muted);font-size:14px;line-height:1.8}
+#swap{color:var(--blue2);font-weight:800;display:inline-block;transition:.35s var(--ease)}
+#swap.swap{opacity:0;transform:translateY(-12px);filter:blur(8px)}
+.idcard{width:278px;max-width:100%;background:#fff;color:#111;border-radius:16px;overflow:hidden;transform:rotate(5deg);box-shadow:0 24px 50px rgba(0,0,0,.55);transition:transform .5s var(--ease-spring);flex-shrink:0}
+.idcard:hover{transform:rotate(0) scale(1.03)}
+/* === CUMA INI YANG GUA UBAH: FOTO === */
+.idcard img{width:100%;height:320px;object-fit:cover;object-position:top center;display:block;background:#334155}
+.idcard .strip{background:linear-gradient(90deg,#2563eb,#60a5fa);color:#fff;text-align:center;padding:7px;font-size:10px;letter-spacing:3px;font-weight:900}
+.idcard .nama{text-align:center;padding:14px;font-weight:900;font-size:14px;line-height:1.4}
+.idcard .nama small{color:#2563eb;font-size:10px;letter-spacing:1px}
+.wisuda{display:grid;grid-template-columns:1fr 1.2fr;gap:20px;align-items:center}
+.wisuda img{width:100%;border-radius:20px;border:1px solid var(--line);box-shadow:0 20px 40px rgba(0,0,0,.5);object-fit:cover}
+@media(max-width:760px){.wisuda{grid-template-columns:1fr}}
+.num{font-size:38px;font-weight:900;letter-spacing:-1px;line-height:1}
+.num.pop{animation:numPop .55s var(--ease-spring)}
+@keyframes numPop{from{opacity:0;transform:translateY(18px) scale(.75) rotateX(20deg);filter:blur(10px)}to{opacity:1;transform:none;filter:blur(0)}}
+.num-label{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.5}
+.notif{position:relative;display:inline-block}
+.notif i{position:absolute;top:-9px;right:-12px;background:#ef4444;color:#fff;font-size:11px;min-width:20px;height:20px;padding:0 5px;border-radius:999px;display:flex;align-items:center;justify-content:center;font-style:normal;box-shadow:0 6px 14px rgba(239,68,68,.5);animation:badgeIn .6s var(--ease-spring)}
+@keyframes badgeIn{0%{transform:translate(14px,-14px) scale(0) rotate(20deg)}70%{transform:scale(1.35) rotate(-5deg)}100%{transform:scale(1)}}
+.drop{position:relative;display:inline-block}
+.dropMenu{position:absolute;top:112%;left:0;background:#0f172a;border:1px solid var(--line);border-radius:16px;padding:8px;min-width:210px;display:none;transform-origin:top left;box-shadow:0 20px 40px rgba(0,0,0,.5);z-index:50;animation:dropIn .35s var(--ease-spring)}
+.dropMenu.open{display:block}
+.dropMenu button{width:100%;text-align:left;background:transparent;border:none;color:#e2e8f0;padding:11px 12px;border-radius:12px;cursor:pointer;font-size:13px;transition:.2s}
+.dropMenu button:hover{background:#1e293b;transform:translateX(4px)}
+@keyframes dropIn{from{opacity:0;transform:scale(.85) translateY(-8px)}to{opacity:1;transform:scale(1)}}
+#modal{position:fixed;inset:0;background:rgba(0,0,0,.72);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;z-index:200;padding:16px}
+#modal.open{display:flex}
+#modal .box{background:#0f172a;border:1px solid var(--line);border-radius:20px;padding:24px;max-width:440px;width:100%;animation:modalIn .4s var(--ease-spring)}
+@keyframes modalIn{from{opacity:0;transform:scale(.82) translateY(22px)}to{opacity:1;transform:scale(1)}}
+.panel{max-height:0;overflow:hidden;transition:max-height .5s var(--ease),opacity .35s;opacity:0}
+.panel.open{max-height:520px;opacity:1}
+.iconBtn{width:46px;height:46px;border-radius:50%;background:var(--blue);border:none;color:#fff;font-size:19px;cursor:pointer;transition:.25s;display:flex;align-items:center;justify-content:center}
+.iconBtn:hover{transform:scale(1.08)}
+.iconBtn.swap{animation:iconSwap .32s}
+@keyframes iconSwap{50%{transform:scale(.55);filter:blur(5px);opacity:0}}
+.check{width:64px;height:64px;border-radius:50%;background:#22c55e;display:none;align-items:center;justify-content:center;margin:14px auto;box-shadow:0 12px 26px rgba(34,197,94,.4)}
+.check.show{display:flex;animation:checkIn .7s var(--ease-spring)}
+@keyframes checkIn{0%{opacity:0;transform:scale(0) rotate(-100deg);filter:blur(6px)}60%{transform:scale(1.18) rotate(8deg) translateY(-6px)}100%{opacity:1;transform:scale(1) rotate(0) translateY(0)}}
+.check svg{width:32px;height:32px}
+.check path{stroke-dasharray:40;stroke-dashoffset:40;animation:draw .55s .25s var(--ease) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.avatars{display:flex;margin:14px 0}
+.avatars span{width:38px;height:38px;border-radius:50%;background:#334155;border:2px solid #020617;display:flex;align-items:center;justify-content:center;font-size:17px;margin-left:-9px;transition:transform .4s var(--ease-spring);cursor:pointer}
+.avatars span:first-child{margin-left:0}
+.avatars span:hover{transform:translateY(-11px) scale(1.28);z-index:3;background:#2563eb}
+.avatars span:hover + span{transform:translateY(-5px) scale(1.1)}
+input,textarea,select{width:100%;background:#0f172a;border:1px solid var(--line);color:#fff;padding:13px 14px;border-radius:12px;margin:6px 0 13px;outline:none;font-family:inherit;font-size:14px;transition:border-color .3s, box-shadow .3s}
+input:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,.2)}
+label{font-size:12px;font-weight:700;color:#cbd5e1;letter-spacing:.3px}
+.shake{animation:shake .45s var(--ease);border-color:#ef4444!important}
+@keyframes shake{20%{transform:translateX(-7px)}40%{transform:translateX(6px)}60%{transform:translateX(-4px)}80%{transform:translateX(3px)}}
+.timeline{position:relative;padding-left:26px;display:flex;flex-direction:column;gap:18px}
+.timeline::before{content:'';position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(#2563eb,#fbbf24);border-radius:99px}
+.t-item{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;transition:.4s var(--ease-spring)}
+.t-item:hover{transform:translateX(6px);border-color:var(--blue)}
+.t-item::before{content:'';position:absolute;left:-23px;top:22px;width:12px;height:12px;background:var(--blue);border-radius:50%;box-shadow:0 0 0 4px #020617, 0 0 0 6px rgba(37,99,235,.4)}
+.t-item .tahun{color:var(--blue2);font-weight:800;font-size:12px;letter-spacing:1px}
+.quote{background:linear-gradient(135deg,#1e3a8a,#0f172a 55%,#3b1a02);border:1px solid rgba(251,191,36,.25);border-radius:22px;padding:28px;text-align:center;position:relative;overflow:hidden}
+.quote h3{font-size:clamp(20px,4vw,28px);line-height:1.4}
+.quote p{color:#fde68a;font-size:13px;margin-top:10px}
+.marquee{overflow:hidden;white-space:nowrap;margin:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0}
+.marquee span{display:inline-block;animation:marquee 18s linear infinite;font-size:13px;color:#94a3b8;letter-spacing:1px}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.pill{display:inline-block;background:#1e293b;border:1px solid var(--line);padding:7px 12px;border-radius:999px;font-size:12px;margin:4px 4px 0 0;transition:.3s}
+.pill:hover{background:var(--blue);transform:translateY(-2px)}
+footer{text-align:center;color:#64748b;font-size:12px;padding:36px 10px;line-height:1.8}
+.progress{height:8px;background:#1e293b;border-radius:999px;overflow:hidden;margin-top:10px}
+.progress i{display:block;height:100%;background:linear-gradient(90deg,#2563eb,#fbbf24);border-radius:999px;width:0;transition:width 1.2s var(--ease)}
+</style>
+</head>
+<body>
+
+<!-- LOADING -->
+<div id="loading">
+<div class="load-logo"><img src="fadillah.jpg" alt="Fadillah"></div>
+<div class="load-skel"><div class="skel" style="height:16px"></div><div class="skel" style="height:16px;width:65%"></div></div>
+<div><span id="loadNum">0</span><span class="pct">%</span></div>
+<div id="loadBar"><div id="loadFill"></div></div>
+<p class="load-text">Menyiapkan Halaman Membanggakan...</p>
+</div>
+
+<div class="stars" id="stars"></div>
+<div class="glow" style="top:-100px;left:-100px"></div>
+<div class="glow" style="bottom:-120px;right:-100px;background:radial-gradient(circle,rgba(251,191,36,.18),transparent 70%)"></div>
+
+<nav>
+<button class="active" onclick="go('home',this)">Home</button>
+<button onclick="go('kisah',this)">Kisahnya</button>
+<button onclick="go('kenapa',this)">Kenapa Hebat?</button>
+<button onclick="go('karya',this)">Karya</button>
+<button onclick="go('pesan',this)">Pesan Jasa</button>
+<a href="https://api.whatsapp.com/send?phone=6283140866873&text=HALO%20FDELZ" style="text-decoration:none"><button class="fdelz">fdelz 💬</button></a>
+</nav>
+
+<div class="wrap">
+<div id="p-home" class="page show">
+<div class="hero reveal in">
+<div class="hero-left">
+<div class="badge notif" style="position:relative">⭐ Anak 15 Tahun Yang Membanggakan <i>🔥</i></div>
+<h1>Fadillah Jagat<br><span class="biru">Pramudita Kusumah</span></h1>
+<p>Dia bukan sekadar anak yang bisa ngoding. Dia adalah <b style="color:#fff">salah satu pembuat web terbaik</b> yang pernah ada di usianya. Di umur <b style="color:#fff">15 tahun</b>, saat anak lain masih bingung mau jadi apa, dia sudah menjadi <span id="swap">Web Developer</span>.</p>
+<p style="margin-top:10px">Ini bukan kebetulan. Ini hasil dari rasa penasaran, ketekunan, dan keberanian untuk terus belajar — bahkan ketika tidak ada yang menyuruh.</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px">
+<button class="btn btn-blue" onclick="klik(this);go('kisah')">Baca Kisahnya →</button>
+<div class="drop"><button class="btn btn-ghost" onclick="klik(this);toggleDrop(event)">Mau Bikin Web? ↓</button>
+<div class="dropMenu" id="dropMenu">
+<button onclick="go('pesan');pilihJasa('Web Bucin 💘')">💘 Web Bucin</button>
+<button onclick="go('pesan');pilihJasa('Web Portfolio 💼')">💼 Web Portfolio</button>
+<button onclick="go('pesan');pilihJasa('Web Jualan 🛒')">🛒 Web Jualan</button>
+<button onclick="go('pesan');pilihJasa('Web Sekolah 🏫')">🏫 Web Sekolah</button>
+<button onclick="go('pesan');pilihJasa('Web Custom ✨')">✨ Web Custom</button>
+</div></div>
+</div>
+<div class="avatars"><span>👨‍💻</span><span>🎨</span><span>🚀</span><span>🔥</span><span>⭐</span><span>🏆</span></div>
+<p style="font-size:12px">📍 Cikijing, West Java • Dipercaya 100+ orang • Fast Respon</p>
+</div>
+<!-- CUMA FOTO INI YANG DIGANTI -->
+<div class="idcard">
+<img src="fadillah.jpg" alt="Fadillah Jagat Pramudita Kusumah">
+<div class="strip">★ PEMBUAT WEB TERBAIK ★</div>
+<div class="nama">FADILLAH JAGAT<br>PRAMUDITA KUSUMAH<br><small>UMUR 15 TAHUN • WEB DEVELOPER • MEMBANGGAKAN</small></div>
+</div>
+</div>
+
+<div class="marquee"><span>FADILLAH JAGAT PRAMUDITA KUSUMAH • UMUR 15 TAHUN • WEB DEVELOPER TERBAIK • MEMBANGGAKAN • CEPAT • RAPI • KREATIF • &nbsp; FADILLAH JAGAT PRAMUDITA KUSUMAH • UMUR 15 TAHUN • WEB DEVELOPER TERBAIK • MEMBANGGAKAN • CEPAT • RAPI • KREATIF • &nbsp;</span></div>
+
+<section>
+<div class="grid">
+<div class="card reveal"><div class="icon">🎂</div><div class="num" id="n1">0</div><div class="num-label"><b style="color:#fff">TAHUN</b><br>Umur dia sekarang. Umur segini, dia sudah menghasilkan karya yang membanggakan orang tua, guru, dan teman-temannya.</div></div>
+<div class="card reveal reveal-d1"><div class="icon">🌐</div><div class="num" id="n2">0</div><div class="num-label"><b style="color:#fff">+ WEB DIBUAT</b><br>Web bucin, portfolio, jualan, sekolah, undangan, semua pernah dia kerjakan dengan hasil yang selalu di atas ekspektasi.</div></div>
+<div class="card reveal reveal-d2"><div class="icon">💛</div><div class="num" id="n3">0</div><div class="num-label"><b style="color:#fff">% MEMBANGGAKAN</b><br>Setiap orang yang order bilang hal yang sama: "Gak nyangka, ini buatan anak 15 tahun."</div></div>
+</div>
+</section>
+
+<!-- CUMA FOTO INI JUGA YANG DIGANTI -->
+<section>
+<div class="card reveal" style="padding:0;overflow:hidden">
+<div class="wisuda" style="padding:22px">
+<img src="fadillah.jpg" alt="Fadillah Wisuda">
+<div>
+<div class="badge">🎓 MOMEN YANG MEMBANGGAKAN</div>
+<h2 style="margin:12px 0 8px">Foto Ini Bukan Sekadar Foto Wisuda.</h2>
+<p style="font-size:13px;color:#94a3b8;line-height:1.8">Ini adalah bukti. Bukti bahwa seorang anak yang dulu hanya penasaran dengan website, sekarang sudah berdiri dengan bangga — memegang buket kelulusannya, memakai jas hitam, dan membawa mimpi yang jauh lebih besar.<br><br>Di tangan yang memegang buket itu, ada tangan yang sama yang mengetik ribuan baris kode. Tangan yang sama yang membuat web untuk banyak orang. <b style="color:#fff">Tangan seorang anak 15 tahun yang sudah menjadi Web Developer.</b></p>
+<button class="btn btn-gold" style="margin-top:14px" onclick="klik(this);go('kisah')">Lihat Perjalanannya →</button>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="quote reveal">
+<p style="letter-spacing:2px;font-size:11px;color:#94a3b8">KATA YANG PALING SERING DIDENGAR TENTANG DIA</p>
+<h3>"Umur boleh 15 tahun.<br>Tapi karyanya sudah dewasa."</h3>
+<p>— Semua orang yang pernah order ke Fadillah</p>
+</div>
+</section>
+</div>
+
+<div id="p-kisah" class="page">
+<h2>Kisah Yang <span>Membanggakan</span></h2>
+<p class="sub">Banyak orang bisa ngoding. Tapi tidak banyak yang berani mulai dari nol, belajar sendiri dari HP, dan tetap konsisten sampai bisa menghasilkan karya. Fadillah adalah salah satu yang langka itu.</p>
+<section>
+<div class="grid2">
+<div class="card reveal"><div class="icon">👀</div><h3>1. Berawal Dari Penasaran</h3><p>Semua bermula dari rasa penasaran. Dia melihat sebuah website yang bagus, lalu bertanya dalam hati: "Ini dibuatnya gimana ya?"<br><br>Dari pertanyaan sederhana itu, dia mulai membongkar, mempelajari, dan mencoba membuatnya sendiri. Tanpa kursus mahal. Tanpa laptop spek tinggi. Hanya HP, internet, dan kemauan yang besar.</p></div>
+<div class="card reveal reveal-d1"><div class="icon">💪</div><h3>2. Belajar Sampai Malam</h3><p>Saat teman-temannya bermain game, Fadillah belajar HTML, CSS, dan JavaScript. Saat orang lain tidur, dia masih mencoba memperbaiki satu baris kode yang error.<br><br>Bukan karena disuruh. Tapi karena dia suka. Dan orang yang belajar karena suka, akan jauh lebih cepat jago daripada yang belajar karena terpaksa.</p></div>
+</div>
+</section>
+<section>
+<h2 style="font-size:24px">Perjalanan <span>Dari Nol Sampai Hebat</span></h2>
+<div class="timeline" style="margin-top:18px">
+<div class="t-item reveal"><div class="tahun">AWAL • TAHAP 1</div><h3 style="margin:6px 0">Pertama Kali Kenal HTML</h3><p style="font-size:13px;color:#94a3b8">Dia membuat website pertamanya yang sangat sederhana. Hanya teks dan warna. Tapi bagi dia, itu adalah momen paling membanggakan — karena dia berhasil membuat sesuatu dari ketiadaan.</p></div>
+<div class="t-item reveal"><div class="tahun">TAHAP 2 • MULAI SERIUS</div><h3 style="margin:6px 0">Belajar CSS & JavaScript</h3><p style="font-size:13px;color:#94a3b8">Webnya mulai hidup. Ada warna, ada animasi, ada tombol yang bisa dipencet. Dia mulai paham bahwa web yang bagus bukan hanya soal bisa dibuka, tapi soal bisa dirasakan.</p></div>
+<div class="t-item reveal"><div class="tahun">TAHAP 3 • MULAI DIPERCAYA ORANG</div><h3 style="margin:6px 0">Orderan Pertama Datang</h3><p style="font-size:13px;color:#94a3b8">Seseorang meminta dibuatkan web. Dia kerjakan dengan sungguh-sungguh, melebihi ekspektasi. Orang itu puas, cerita ke teman-temannya, dan dari situlah orderan terus berdatangan.</p></div>
+<div class="t-item reveal"><div class="tahun">SEKARANG • UMUR 15 TAHUN</div><h3 style="margin:6px 0">Menjadi Salah Satu Pembuat Web Terbaik</h3><p style="font-size:13px;color:#94a3b8">Sekarang, di umur 15 tahun, dia sudah dipercaya banyak orang. Hasilnya rapi, cepat, dan selalu ada animasi halus yang membuat webnya terasa hidup dan mahal. Ini bukan lagi sekadar hobi. Ini adalah bukti bahwa usia bukan penghalang untuk menjadi hebat.</p></div>
+</div>
+</section>
+<section>
+<div class="card reveal" style="text-align:center">
+<h3>Kenapa Kisah Ini Membanggakan?</h3>
+<p style="margin-top:8px">Karena Fadillah membuktikan satu hal penting: <b style="color:#fff">kamu tidak perlu menunggu dewasa untuk menjadi hebat.</b> Kamu hanya perlu mulai, konsisten, dan berani membuat sesuatu — walaupun awalnya sederhana.</p>
+<button class="btn btn-ghost" style="margin-top:14px" onclick="klik(this);togglePanel()">Lihat Skill Lengkapnya ↓</button>
+<div id="panelSkill" class="panel"><div style="text-align:left;margin-top:14px"><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span><span class="pill">Python</span><span class="pill">PHP</span><span class="pill">MySQL</span><span class="pill">React</span><span class="pill">Supabase</span><span class="pill">Firebase</span><span class="pill">UI/UX</span><span class="pill">Animasi Smooth</span><span class="pill">Transitions.dev</span><span class="pill">WA API</span><span class="pill">Desain Premium</span></div></div>
+</div>
+</section>
+</div>
+
+<div id="p-kenapa" class="page">
+<h2>Kenapa Dia <span>Hebat & Membanggakan?</span></h2>
+<p class="sub">Ada banyak jasa bikin web. Tapi hanya sedikit yang membuat pelanggannya merasa bangga dan puas. Ini 6 alasan kenapa Fadillah berbeda.</p>
+<section>
+<div class="grid">
+<div class="card reveal"><div class="icon">⚡</div><h3>Cepat, Tapi Tidak Asal</h3><p>Order hari ini, besok atau lusa sudah jadi. Cepat bukan berarti asal-asalan. Setiap detail tetap diperhatikan, dari warna, jarak, sampai animasi.</p><div class="progress"><i data-w="95"></i></div><p style="font-size:11px;margin-top:6px">Kecepatan: 95%</p></div>
+<div class="card reveal reveal-d1"><div class="icon">🎨</div><h3>Desainnya Beda & Mahal</h3><p>Tidak pakai template pasaran. Setiap web dibuat sesuai karakter yang order. Makanya hasilnya kelihatan premium, bukan murahan.</p><div class="progress"><i data-w="98"></i></div><p style="font-size:11px;margin-top:6px">Kualitas Desain: 98%</p></div>
+<div class="card reveal reveal-d2"><div class="icon">📱</div><h3>Rapi Di HP, Rapi Di Laptop</h3><p>90% orang membuka web dari HP. Web Fadillah dijamin rapi di HP, tidak berantakan, tidak kepotong, dan enak di-scroll.</p><div class="progress"><i data-w="100"></i></div><p style="font-size:11px;margin-top:6px">Responsif: 100%</p></div>
+<div class="card reveal"><div class="icon">✨</div><h3>Animasinya Halus & Hidup</h3><p>Tombol mental halus saat dipencet, card naik pelan saat disentuh, loading shimmer yang elegan. Webnya terasa hidup, bukan kaku.</p><div class="progress"><i data-w="97"></i></div><p style="font-size:11px;margin-top:6px">Kehalusan Animasi: 97%</p></div>
+<div class="card reveal reveal-d1"><div class="icon">💬</div><h3>Fast Respon & Ramah</h3><p>Di-chat langsung dibalas. Revisi dilayani sampai puas. Tidak menghilang setelah dibayar. Ini yang paling membuat orang percaya.</p><div class="progress"><i data-w="99"></i></div><p style="font-size:11px;margin-top:6px">Pelayanan: 99%</p></div>
+<div class="card reveal reveal-d2"><div class="icon">💰</div><h3>Harga Pelajar, Hasil Profesional</h3><p>Harga bersahabat untuk pelajar, tapi hasilnya seperti jasa profesional yang harganya jutaan. Inilah yang membuat semua orang merekomendasikannya.</p><div class="progress"><i data-w="100"></i></div><p style="font-size:11px;margin-top:6px">Value: 100%</p></div>
+</div>
+</section>
+<section>
+<div class="card reveal" style="text-align:center">
+<h3>Apa Kata Mereka?</h3>
+<p style="margin-top:8px">"Gila sih, umur 15 tapi webnya kayak buatan agensi. Rapi banget, animasinya halus semua. Bangga banget bisa kenal Fadillah."</p>
+<p style="margin-top:8px;color:#fbbf24">⭐⭐⭐⭐⭐ — Client Web Bucin</p>
+<p style="margin-top:12px">"Order jam 9 malam, besok siang sudah jadi. Cepat, rapi, revisi juga dilayani. Anak ini masa depannya cerah banget."</p>
+<p style="margin-top:8px;color:#fbbf24">⭐⭐⭐⭐⭐ — Client Web Jualan</p>
+<div style="display:flex;justify-content:center;gap:10px;margin-top:14px;align-items:center"><button class="iconBtn" onclick="togglePlay(this)">▶</button><span style="font-size:12px;color:#94a3b8">Putar testimoni suara</span></div>
+</div>
+</section>
+</div>
+
+<div id="p-karya" class="page">
+<h2>Karya Yang <span>Membuat Bangga</span></h2>
+<p class="sub">Ini bukan sekadar daftar project. Ini adalah bukti nyata bahwa anak umur 15 tahun bisa membuat karya yang membanggakan.</p>
+<section>
+<div class="grid">
+<div class="card reveal" onclick="openModal('Web Bucin','Web bucin paling terkenal buatan Fadillah. Ada animasi hati berjatuhan, tombol GAMAU yang kabur, dan tombol MAU yang langsung nyambung ke WA. Romantis, lucu, dan selalu bikin yang dikasih web ini baper.')"><div class="icon">💘</div><h3>Web Bucin</h3><p>Web tembak pacar paling romantis. Tombol GAMAU kabur, tombol MAU langsung ke WA. Bikin baper.</p><p style="color:#60a5fa;font-size:12px;margin-top:10px">Lihat Penjelasan →</p></div>
+<div class="card reveal reveal-d1" onclick="openModal('Web Portfolio','Web portfolio yang membuat seseorang kelihatan profesional. Ada loading shimmer, animasi halus, dan desain premium yang membuat HRD / client langsung percaya.')"><div class="icon">💼</div><h3>Web Portfolio</h3><p>Bikin kamu kelihatan profesional. Desain premium, animasi halus, loading elegan.</p><p style="color:#60a5fa;font-size:12px;margin-top:10px">Lihat Penjelasan →</p></div>
+<div class="card reveal reveal-d2" onclick="openModal('Web Jualan','Web jualan yang membuat produk kelihatan mahal dan terpercaya. Ada katalog, tombol WA order, dan desain yang membuat pembeli langsung yakin untuk membeli.')"><div class="icon">🛒</div><h3>Web Jualan</h3><p>Produk kelihatan mahal & terpercaya. Pembeli langsung yakin, order langsung jalan.</p><p style="color:#60a5fa;font-size:12px;margin-top:10px">Lihat Penjelasan →</p></div>
+<div class="card reveal" onclick="openModal('Web Sekolah','Web untuk sekolah, kelas, dan organisasi. Ada data siswa, jadwal, dan pengumuman yang rapi dan mudah diakses dari HP.')"><div class="icon">🏫</div><h3>Web Sekolah</h3><p>Data siswa, jadwal, pengumuman — semua rapi dan mudah dibuka dari HP.</p><p style="color:#60a5fa;font-size:12px;margin-top:10px">Lihat Penjelasan →</p></div>
+<div class="card reveal reveal-d1" onclick="openModal('Web Undangan','Web undangan digital yang elegan. Ada countdown, galeri, lokasi, dan tombol RSVP. Jauh lebih keren daripada undangan kertas.')"><div class="icon">💌</div><h3>Web Undangan</h3><p>Undangan digital elegan. Countdown, galeri, lokasi, RSVP — semua lengkap.</p><p style="color:#60a5fa;font-size:12px;margin-top:10px">Lihat Penjelasan →</p></div>
+<div class="card reveal reveal-d2" onclick="openModal('Web Custom','Punya ide web yang beda? Fadillah suka tantangan. Ceritakan idemu, dia akan buatkan versi terbaiknya dengan animasi halus dan desain membanggakan.')"><div class="icon">✨</div><h3>Web Custom</h3><p>Punya ide gila? Ceritakan saja. Fadillah suka tantangan dan akan buatkan yang terbaik.</p><p style="color:#60a5fa;font-size:12px;margin-top:10px">Lihat Penjelasan →</p></div>
+</div>
+</section>
+<section>
+<div class="quote reveal"><h3>Setiap web yang dia buat,<br>selalu ada cerita membanggakan di baliknya.</h3><p>Karena dia tidak hanya membuat web. Dia membuat kebanggaan.</p></div>
+</section>
+</div>
+
+<div id="p-pesan" class="page">
+<h2>Pesan Jasa Ke <span>Fadillah</span></h2>
+<p class="sub">Mau punya web yang membanggakan seperti ini? Langsung isi formulir ini. Pesanmu akan otomatis terkirim ke WA Fadillah / Fdelz. Fast respon, dijamin.</p>
+<section>
+<div class="card reveal" style="max-width:620px;margin:auto">
+<label>Nama Kamu</label><input id="inNama" placeholder="Contoh: Rizky">
+<label>Mau Bikin Web Apa?</label><input id="inJasa" placeholder="Contoh: Web Bucin untuk pacar aku">
+<label>Ceritakan Web Impianmu</label><textarea id="inPesan" rows="4" placeholder="Ceritakan dengan detail... Mau warna apa? Mau ada animasi apa? Untuk siapa webnya? Semakin detail, semakin bagus hasilnya."></textarea>
+<div class="check" id="checkOk"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12 L10 18 L20 6" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<button class="btn btn-green btn-full" onclick="kirim(this)">✈️ Kirim Ke WA Fadillah</button>
+<p style="font-size:11px;color:#64748b;text-align:center;margin-top:12px">Pembuat Web : fdelz • WA 0831-4086-6873 • Cikijing, West Java</p>
+<button class="btn btn-gold btn-full" style="margin-top:10px" onclick="klik(this);window.open('https://api.whatsapp.com/send?phone=6283140866873&text=HALO%20FADILLAH%2C%20AKU%20BANGGA%20SAMA%20KAMU%2C%20WEB%20KAMU%20KEREN%20BANGET','_blank')">🏆 Kirim Pesan Bangga Ke Fadillah</button>
+</div>
+</section>
+</div>
+</div>
+
+<div id="modal" onclick="if(event.target==this)closeModal()"><div class="box"><h3 id="mTitle" style="font-size:18px"></h3><p id="mDesc" style="font-size:13px;color:#94a3b8;margin:12px 0;line-height:1.8"></p><button class="btn btn-blue btn-full" onclick="klik(this);closeModal()">Tutup & Kembali</button></div></div>
+
+<footer>© 2026 Fadillah Jagat Pramudita Kusumah • Umur 15 Tahun • Web Developer Terbaik • Membanggakan<br>Dari Cikijing, Untuk Indonesia — dan Dunia.<br>Pembuat Web : <a href="https://api.whatsapp.com/send?phone=6283140866873&text=HALO%20FDELZ" style="color:#25D366;font-weight:800">fdelz klik disini 💬</a></footer>
+
+<script>
+let stars=document.getElementById('stars');for(let i=0;i<40;i++){let s=document.createElement('i');s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.width=s.style.height=(Math.random()*3+1)+'px';s.style.animationDelay=(Math.random()*3)+'s';stars.appendChild(s)}
+let n=0;let iv=setInterval(()=>{n+=Math.floor(Math.random()*6)+3;if(n>=100){n=100;clearInterval(iv);setTimeout(()=>{document.getElementById('loading').classList.add('hide');animateNums();observe()},500)}document.getElementById('loadNum').textContent=n;document.getElementById('loadFill').style.width=n+'%'},85);
+function animateNums(){[['n1',15],['n2',100],['n3',100]].forEach(([id,target],idx)=>{setTimeout(()=>{let el=document.getElementById(id);if(!el)return;let c=0;let t=setInterval(()=>{c+=Math.ceil(target/22);if(c>=target){c=target;clearInterval(t)}el.textContent=c+(id=='n3'?'%':id=='n2'?'+':'');el.classList.remove('pop');void el.offsetWidth;el.classList.add('pop')},55)},idx*180)})}
+let words=['Web Developer','Pembuat Web Terbaik','Anak 15 Tahun Yang Membanggakan','Kreator Web Premium'];let wi=0;setInterval(()=>{let el=document.getElementById('swap');if(!el)return;el.classList.add('swap');setTimeout(()=>{wi=(wi+1)%words.length;el.textContent=words[wi];el.classList.remove('swap')},350)},2800);
+function go(id,btn){if(btn){document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));btn.classList.add('active')}document.querySelectorAll('.page').forEach(p=>p.classList.remove('show'));let t=document.getElementById('p-'+id);t.classList.add('show');window.scrollTo({top:0,behavior:'smooth'});let dm=document.getElementById('dropMenu');if(dm)dm.classList.remove('open');setTimeout(observe,80)}
+function klik(el){el.classList.remove('klik');void el.offsetWidth;el.classList.add('klik')}
+function toggleDrop(e){e.stopPropagation();document.getElementById('dropMenu').classList.toggle('open')}
+document.addEventListener('click',()=>{let d=document.getElementById('dropMenu');if(d)d.classList.remove('open')});
+function pilihJasa(v){document.getElementById('inJasa').value=v}
+function togglePanel(){document.getElementById('panelSkill').classList.toggle('open')}
+function openModal(t,d){document.getElementById('mTitle').textContent=t;document.getElementById('mDesc').textContent=d;document.getElementById('modal').classList.add('open')}
+function closeModal(){document.getElementById('modal').classList.remove('open')}
+let playing=false;function togglePlay(btn){playing=!playing;btn.classList.add('swap');setTimeout(()=>{btn.textContent=playing?'⏸':'▶';btn.classList.remove('swap')},160)}
+function observe(){document.querySelectorAll('.reveal').forEach(el=>{let r=el.getBoundingClientRect();if(r.top<window.innerHeight-40)el.classList.add('in')});document.querySelectorAll('.progress i').forEach(bar=>{let r=bar.getBoundingClientRect();if(r.top<window.innerHeight-40)bar.style.width=bar.dataset.w+'%'})}
+window.addEventListener('scroll',observe);setTimeout(observe,600);
+function kirim(btn){klik(btn);let nama=document.getElementById('inNama');let jasa=document.getElementById('inJasa');let pesan=document.getElementById('inPesan');let ok=true;[nama,jasa,pesan].forEach(i=>{i.classList.remove('shake');if(!i.value.trim()){i.classList.add('shake');ok=false}});if(!ok)return;let c=document.getElementById('checkOk');c.classList.add('show');setTimeout(()=>{window.open('https://api.whatsapp.com/send?phone=6283140866873&text='+encodeURIComponent('HALO FADILLAH, Saya '+nama.value+' Mau bikin: '+jasa.value+' | Cerita: '+pesan.value),'_blank');c.classList.remove('show')},850)}
+</script>
+</body>
+</html>
