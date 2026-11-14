@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fadillah Jagat Pramudita Kusumah - Anak 15 Tahun Yang Membanggakan</title>
 <meta name="description" content="Fadillah Jagat Pramudita Kusumah, umur 15 tahun sudah menjadi Web Developer terbaik.">
+<link rel="icon" href="icon.jpg">
+<link rel="apple-touch-icon" href="icon.jpg">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2563eb">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 :root{--blue:#2563eb;--blue2:#60a5fa;--blue3:#93c5fd;--bg:#020617;--bg2:#050b1e;--card:#0f172a;--card2:#111c36;--line:rgba(255,255,255,.08);--text:#e2e8f0;--muted:#94a3b8;--ease:cubic-bezier(.22,1,.36,1);--ease-spring:cubic-bezier(.34,1.56,.64,1);--gold:#fbbf24}
@@ -81,7 +87,6 @@ h2 span{color:var(--blue2);font-style:italic}
 #swap.swap{opacity:0;transform:translateY(-12px);filter:blur(8px)}
 .idcard{width:278px;max-width:100%;background:#fff;color:#111;border-radius:16px;overflow:hidden;transform:rotate(5deg);box-shadow:0 24px 50px rgba(0,0,0,.55);transition:transform .5s var(--ease-spring);flex-shrink:0}
 .idcard:hover{transform:rotate(0) scale(1.03)}
-/* === CUMA INI YANG GUA UBAH: FOTO === */
 .idcard img{width:100%;height:320px;object-fit:cover;object-position:top center;display:block;background:#334155}
 .idcard .strip{background:linear-gradient(90deg,#2563eb,#60a5fa);color:#fff;text-align:center;padding:7px;font-size:10px;letter-spacing:3px;font-weight:900}
 .idcard .nama{text-align:center;padding:14px;font-weight:900;font-size:14px;line-height:1.4}
@@ -149,7 +154,6 @@ footer{text-align:center;color:#64748b;font-size:12px;padding:36px 10px;line-hei
 </head>
 <body>
 
-<!-- LOADING -->
 <div id="loading">
 <div class="load-logo"><img src="fadillah.jpg" alt="Fadillah"></div>
 <div class="load-skel"><div class="skel" style="height:16px"></div><div class="skel" style="height:16px;width:65%"></div></div>
@@ -193,7 +197,6 @@ footer{text-align:center;color:#64748b;font-size:12px;padding:36px 10px;line-hei
 <div class="avatars"><span>👨‍💻</span><span>🎨</span><span>🚀</span><span>🔥</span><span>⭐</span><span>🏆</span></div>
 <p style="font-size:12px">📍 Cikijing, West Java • Dipercaya 100+ orang • Fast Respon</p>
 </div>
-<!-- CUMA FOTO INI YANG DIGANTI -->
 <div class="idcard">
 <img src="fadillah.jpg" alt="Fadillah Jagat Pramudita Kusumah">
 <div class="strip">★ PEMBUAT WEB TERBAIK ★</div>
@@ -211,7 +214,6 @@ footer{text-align:center;color:#64748b;font-size:12px;padding:36px 10px;line-hei
 </div>
 </section>
 
-<!-- CUMA FOTO INI JUGA YANG DIGANTI -->
 <section>
 <div class="card reveal" style="padding:0;overflow:hidden">
 <div class="wisuda" style="padding:22px">
@@ -346,4 +348,4 @@ window.addEventListener('scroll',observe);setTimeout(observe,600);
 function kirim(btn){klik(btn);let nama=document.getElementById('inNama');let jasa=document.getElementById('inJasa');let pesan=document.getElementById('inPesan');let ok=true;[nama,jasa,pesan].forEach(i=>{i.classList.remove('shake');if(!i.value.trim()){i.classList.add('shake');ok=false}});if(!ok)return;let c=document.getElementById('checkOk');c.classList.add('show');setTimeout(()=>{window.open('https://api.whatsapp.com/send?phone=6283140866873&text='+encodeURIComponent('HALO FADILLAH, Saya '+nama.value+' Mau bikin: '+jasa.value+' | Cerita: '+pesan.value),'_blank');c.classList.remove('show')},850)}
 </script>
 </body>
-</html>
+  </html>
